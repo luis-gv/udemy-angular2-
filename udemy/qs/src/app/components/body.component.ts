@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class BodyComponent {
- texto = "Un gran poder requiere una gran responsabilidad";
+ texto:string = "Un gran poder requiere una gran responsabilidad";
  public autor:string = "Ben Parker";
- mostrar = false;
+ mostrar:boolean = false;
+ personajes:string[] = ["Apider-man","Ant-man","hulk"]
 }
