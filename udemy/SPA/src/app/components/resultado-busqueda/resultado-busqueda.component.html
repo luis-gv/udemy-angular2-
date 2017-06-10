@@ -10,11 +10,11 @@
       <h4 class="card-title" [innerHtml]="heroe.nombre"></h4>
       <p class="card-text">{{heroe.bio}}</p>
       <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
-      <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">
+      <!-- <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">
         Ver mas...
-      </button>
+      </button> -->
 
-      <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Ver mas link...</a> -->
+      <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Ver mas link...</a>
 
     </div>
   </div>
