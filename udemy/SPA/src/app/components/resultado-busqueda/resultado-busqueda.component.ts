@@ -9,9 +9,11 @@ import {HeroesService, Heroe} from '../../servicios/heroes.service';
 export class ResultadoBusquedaComponent implements OnInit {
 
   heroes:Heroe[]=[];
+  termino:string;
 
   constructor(private activatedRoute:ActivatedRoute, private heroeService:HeroesService ) {
       this.activatedRoute.params.subscribe(params => {
+        this.termino = params['termino'];
         this.heroes = this.heroeService.buscarHeroes(params['termino']);
       })
   }
