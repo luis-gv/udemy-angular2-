@@ -21,6 +21,7 @@ export class AppComponent {
       casa: "19"
     }
   };
+  fecha = new Date();
 
 valorDePromesa = new Promise( (resolve,reject) => {
 
