@@ -102,6 +102,21 @@
       <td>date:'medium'</td>
       <td>{{ fecha | date:'MMMM - dd' }}</td>
     </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td>date:'medium'</td>
+      <td>{{ fecha | date:'MMMM - dd' }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td>capitalizado</td>
+      <td>{{ nombre2 | capitalizado:1:2:3 }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td>capitalizado:falseo</td>
+      <td>{{ nombre2 | capitalizado:false }}</td>
+    </tr>
   </tbody>
 </table>
 
