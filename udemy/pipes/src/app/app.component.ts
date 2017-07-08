@@ -23,6 +23,7 @@ export class AppComponent {
     }
   };
   fecha = new Date();
+  video = "LTIjUJEehDA";
 
 valorDePromesa = new Promise( (resolve,reject) => {
 

@@ -82,41 +82,10 @@
       <td>number:'.2-2'</td>
       <td>{{ salario | number:'.2-2' }}</td>
     </tr>
-    <tr>
-      <td>{{ valorDePromesa }}</td>
-      <td>async</td>
-      <td>{{ valorDePromesa | async }}</td>
-    </tr>
-    <tr>
-      <td>{{ fecha }}</td>
-      <td>date</td>
-      <td>{{ fecha | date }}</td>
-    </tr>
-    <tr>
-      <td>{{ fecha }}</td>
-      <td>date:'medium'</td>
-      <td>{{ fecha | date:'medium' }}</td>
-    </tr>
-    <tr>
-      <td>{{ fecha }}</td>
-      <td>date:'medium'</td>
-      <td>{{ fecha | date:'MMMM - dd' }}</td>
-    </tr>
-    <tr>
-      <td>{{ fecha }}</td>
-      <td>date:'medium'</td>
-      <td>{{ fecha | date:'MMMM - dd' }}</td>
-    </tr>
-    <tr>
-      <td>{{ nombre2 }}</td>
-      <td>capitalizado</td>
-      <td>{{ nombre2 | capitalizado:1:2:3 }}</td>
-    </tr>
-    <tr>
-      <td>{{ nombre2 }}</td>
-      <td>capitalizado:falseo</td>
-      <td>{{ nombre2 | capitalizado:false }}</td>
-    </tr>
+    <h4>Video</h4>
+    <hr>
+    <iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/' " frameborder="0" allowfullscreen></iframe>
+
   </tbody>
 </table>
 
@@ -124,14 +93,6 @@
 <ul>
   <li *ngFor="let item of arreglo | slice:1:5">{{ item }}</li>
 </ul>
-
-<h4>JSON</h4>
-<pre>
-{{ heroe | json }}
-</pre>
-
-
-<br><br>
 
 
 </div>

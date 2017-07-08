@@ -6,11 +6,13 @@ import {CapitalizadoPipe} from './pipes/capitalizado.pipe';
 
 import { AppComponent } from './app.component';
 import { LOCALE_ID } from '@angular/core';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizadoPipe
+    CapitalizadoPipe,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
