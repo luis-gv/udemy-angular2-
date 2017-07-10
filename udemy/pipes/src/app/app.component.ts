@@ -24,6 +24,8 @@ export class AppComponent {
   };
   fecha = new Date();
   video = "LTIjUJEehDA";
+  password:string = "qwerty2017";
+  ofuscaPassword:boolean = false;
 
 valorDePromesa = new Promise( (resolve,reject) => {
 

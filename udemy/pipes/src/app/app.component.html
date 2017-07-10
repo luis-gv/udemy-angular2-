@@ -82,6 +82,16 @@
       <td>number:'.2-2'</td>
       <td>{{ salario | number:'.2-2' }}</td>
     </tr>
+    <tr>
+      <td>{{ password }}</td>
+      <td>contrasena:{{ofuscaPassword}} <br>
+        <button
+          (click)="ofuscaPassword = !ofuscaPassword"
+          type="button"
+          class="btn btn-outline-primary" >Ofuscar Activar/Desactivar</button>
+      </td>
+      <td>{{ password | contrasena:ofuscaPassword }}</td>
+    </tr>
     <h4>Video</h4>
     <hr>
     <iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/' " frameborder="0" allowfullscreen></iframe>
