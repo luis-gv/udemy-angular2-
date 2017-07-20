@@ -12,13 +12,15 @@ export class SpotifyService {
 
   getArtistas(termino:string){
     let headers = new Headers();
-    headers.append('authosization','Bearer BQCeHp1vSP1gsU0nkoDwCsWyB2jNCEhW_Y1rdIUh5saUyl2z6erg7wCxwvC41N0D9XnQ7AX7B3DqtGPpv91Y6Q')
-    let query = `q=${termino}&type=artist`;
+    headers.append('authorization','Bearer BQApHoEdIZU2mBgbXN1euwHS0mLWQ9XzFHjBSHpfCdYtMY4rUR0ginBvSaABGaGlTQ8iKRYnKnGjsYgaG0tsfw')
+    let query = `?q=${termino}&type=artist`;
     let url = this.urlBusqueda + query;
 
     return this.http.get(url, {headers})
             .map(res =>{
-              console.log(res)
+              console.log(res.json().artists.items);
+            //  this.artistas = res.json().artists.items;
+              return res.json().artists.items;
             });
   }
 
