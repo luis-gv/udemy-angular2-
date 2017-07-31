@@ -7,14 +7,17 @@ import { SpotifyService } from '../../services/spotify.service';
 })
 export class SearchComponent implements OnInit {
 
+  termino:string = "";
+
   constructor(private _spotifyService:SpotifyService) { }
 
   ngOnInit() {
-    this._spotifyService.getArtistas("Beatles")
-    .subscribe(data => {
-      console.log('Esto es del search.component');
-      console.log(data);
-    });
+
+  }
+
+  buscarArtista(){
+    // console.log(this.termino);
+    this._spotifyService.getArtistas(this.termino).subscribe();
   }
 
 }

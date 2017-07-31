@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-5" >
+    <img [src]="artista.images[2].url" alt="">
+  </div>
+  <div class="col-md-2">
+    <h4>{{artista.name}}</h4>
+  </div>
+</div>
+<br>
+<h4>Top Tracks</h4>
+<div class="row" *ngFor="let pista of pistas">
+  <div class="col-md-5">
+    <img [src]="pista.album.images[2].url" alt="">
+  </div>
+  <div class="col-md-2">
+    <h5>{{pista.name}}</h5>
+  </div>
+</div>
